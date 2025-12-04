@@ -1,0 +1,80 @@
+body {
+    background-image: url(background3_app.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+#log {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: rgb(24, 255, 113);
+}
+
+.email {
+    width: 25%;
+    color: rgb(24, 255, 113);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.senha {
+    width: 25%;
+    color: rgb(24, 255, 113);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#bt{
+    background-color: rgb(14, 193, 83);
+    border-radius: 8px;
+    border-color: rgb(252, 240, 240);
+    font-size: 26px;
+    color: rgb(252, 240, 240);
+    cursor: pointer;
+}
+
+#ind{
+    color: rgb(24, 255, 113);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+#bv{
+    color: rgb(24, 255, 113);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.mensagem{
+    text-align: center;
+    border: 5px solid;
+    width: 30%;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.mensagem-sucesso{
+    border-color: green;
+    width: 30%;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.mensagem-erro{
+    border-color: red;
+    background-color: rgb(214, 6, 6);
+    color: white;
+    width: 30%;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}

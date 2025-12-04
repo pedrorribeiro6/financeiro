@@ -20,13 +20,14 @@ $usuario_nome = $_SESSION['usuario_nome'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Financeiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Sistema Financeiro</h1>
+    <h1 id="ind">Sistema Financeiro</h1>
 
     <div>
-        <p>Bem-Vindo,<strong><?php echo $usuario_nome ?></strong></p>
+        <p id="bv">Bem-Vindo,<strong><?php echo $usuario_nome ?></strong></p>
         <a href="logout.php">Sair</a>
     </div>
 </body>

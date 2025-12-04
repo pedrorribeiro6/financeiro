@@ -17,23 +17,26 @@ if (isset($_SESSION['usuario_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Sistema Financeiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Login - Sistema Financeiro</h1>
+    <h1 id="log">Login - Sistema Financeiro</h1>
 
     <?php exibir_mensagem()?>
     <form action="autenticar.php" method="post">
         <div>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email" class="email">E-mail</label>
+            <input type="email" name="email" class="email" required>
         </div>
+        <br>
         <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" required>
+            <label for="senha" class="senha">Senha:</label>
+            <input type="password" name="senha" class="senha" required>
         </div>
+        <br>
         <div>
-            <button type="submit">Entrar</button>
+            <button type="submit" id="bt">Entrar</button>
         </div>
     </form>
 
