@@ -8,6 +8,7 @@ if (!isset($_SESSION['usuario_id'])) {
     exit;
 }
 
+
 $usuario_id = $_SESSION['usuario_id'];
 $usuario_nome = $_SESSION['usuario_nome'];
 ?>
@@ -26,6 +27,7 @@ $usuario_nome = $_SESSION['usuario_nome'];
 
     <div>
         <p>Bem-Vindo,<strong><?php echo $usuario_nome ?></strong></p>
+        <a href="logout.php">Sair</a>
     </div>
 </body>
 
