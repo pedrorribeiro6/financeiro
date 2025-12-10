@@ -23,7 +23,7 @@ if (isset($_SESSION['usuario_id'])) {
 <body>
     <h1 id="log">Login - Sistema Financeiro</h1>
 
-    <?php exibir_mensagem()?>
+    <?php exibir_mensagem(); ?>
     <form action="autenticar.php" method="post">
         <div>
             <label for="email" class="email">E-mail</label>
