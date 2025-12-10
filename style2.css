@@ -1,0 +1,16 @@
+body {
+    background-image: url(background3_app.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#cat{
+    text-align: center;
+    color: rgb(14, 193, 83);
+}
+
+.th{
+    color: rgb(14, 193, 83);
+}

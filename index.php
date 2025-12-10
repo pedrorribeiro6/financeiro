@@ -51,6 +51,7 @@ $ultimas_transacoes = $stmt_ultimas->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Financeiro</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -58,42 +59,46 @@ $ultimas_transacoes = $stmt_ultimas->fetchAll();
 
     <div>
         <p id="bv">Bem-Vindo,<strong><?php echo $usuario_nome ?></strong></p>
-        <a href="logout.php">Sair</a>
+        <a href="logout.php" class="btn btn-danger ">Sair</a>
     </div>
+    <br>
 
     <?php exibir_mensagem(); ?>
 
     <nav>
         <ul>
-            <li><a href="index.php">Dashboard</a></li>
-            <li><a href="categorias_listar.php">Categorias</a></li>
-            <li><a href="transacoes_listar.php">Transações</a></li>
+            <li><a class="btn btn-primary" href="index.php">Dashboard</a></li>
+            <br>
+            <li><a class="btn btn-primary" href="categorias_listar.php">Categorias</a></li>
+            <br>
+            <li><a class="btn btn-primary" href="transacoes_listar.php">Transações</a></li>
+            <br>
         </ul>
     </nav>
 
-    <h2>Resumo Financeiro</h2>
+    <h2 id="h2">Resumo Financeiro</h2>
 
     <div>
         <div>
-            <h3>Receitas</h3>
+            <h3 id="rec">Receitas</h3>
             <p>R$ <?php echo number_format($total_receitas, 2,  ',','.') ?></p>
         </div>
         
         <div>
-            <h3>Despesas</h3>
+            <h3 id="des">Despesas</h3>
             <p>R$ <?php echo number_format($total_despesas, 2,  ',','.') ?></p>
         </div>
         
         <div>
-            <h3>Saldo</h3>
+            <h3 id="sal">Saldo</h3>
             <p>R$ <?php echo number_format($saldo, 2,  ',','.') ?></p>
         </div>
     </div>
 
-    <h2>Últimas Transações</h2>
+    <h2 id="ult">Últimas Transações</h2>
     
     <?php if (count($ultimas_transacoes) > 0): ?>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Data</th>
@@ -119,7 +124,7 @@ $ultimas_transacoes = $stmt_ultimas->fetchAll();
         <p><a href="transacoes_listar.php">Ver todas as transações</a></p>
     <?php else: ?>
         <p>Nenhuma transação cadastrada ainda.</p>
-        <p><a href="transacoes_formulario.php">Cadastrar primeira transação</a></p>
+        <p><a class="btn btn-danger" href="transacoes_formulario.php">Cadastrar primeira transação</a></p>
     <?php endif; ?>
 </body>
 

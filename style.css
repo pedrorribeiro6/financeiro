@@ -1,9 +1,7 @@
 body {
     background-image: url(background3_app.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    text-align: center;
     height: 100vh;
 }
 
@@ -56,8 +54,6 @@ body {
     width: 30%;
     position: absolute;
     border-radius: 10px;
-    text-align: center;
-
 }
 
 .mensagem-sucesso{
@@ -77,4 +73,25 @@ body {
     position: absolute;
     border-radius: 10px;
     text-align: center;
+}
+
+#h2 {
+    color: rgb(3, 53, 22);
+}
+#rec {
+    color: rgb(14, 193, 83);
+}
+#des {
+    color: rgb(14, 193, 83);
+}
+#sal {
+    color: rgb(14, 193, 83);
+}
+#ult {
+    color: rgb(14, 193, 83);
+}
+
+#h1{
+    text-align: center;
+    color: rgb(14, 193, 83);
 }
