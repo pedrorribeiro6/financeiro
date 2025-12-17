@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    text-align: center;
 }
 
 #log {
@@ -16,12 +17,14 @@ body {
     width: 25%;
     color: rgb(24, 255, 113);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 .senha {
     width: 25%;
     color: rgb(24, 255, 113);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 #bt{
@@ -77,21 +80,57 @@ body {
 
 #h2 {
     color: rgb(3, 53, 22);
+    text-align: center;
 }
-#rec {
-    color: rgb(14, 193, 83);
+
+.tirar-bola{
+    list-style-type: none;
+    text-align: center;
 }
-#des {
+
+
+.palavras{
     color: rgb(14, 193, 83);
+    text-align: center;
 }
-#sal {
-    color: rgb(14, 193, 83);
+
+.centralizar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 98%;
 }
-#ult {
-    color: rgb(14, 193, 83);
+
+#ult{
+    text-align: center;
+}
+
+.ultp{
+    text-align: center;
 }
 
 #h1{
     text-align: center;
     color: rgb(14, 193, 83);
+}
+
+#sair{
+    text-align: center;
+}
+
+#sl{
+    color: red;
+}
+
+#sr{
+    color: red;
+}
+
+.botoes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 98%;
 }

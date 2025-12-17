@@ -71,6 +71,7 @@ $categorias = $stmt->fetchAll();
         <div>
             <a class="btn btn-warning" href="categorias_formulario.php">Nova Categoria</a>
         </div>
+        <br>
 
         <?php if (count($categorias) > 0): ?>
             <table class="table">

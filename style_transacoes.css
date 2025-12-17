@@ -1,0 +1,48 @@
+body {
+    background-image: url(background3_app.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: rgb(46, 222, 7);
+}
+
+h1{
+    text-align: center;
+    color: rgb(46, 222, 7);
+}
+
+.tabelas{
+  color: rgb(24, 255, 113);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+.bv{
+    text-align: center;
+}
+
+.centralizar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 98%;
+}
+
+.tirar-bola{
+    list-style-type: none;
+    text-align: center;
+}
+
+#sl{
+    color: red;
+}
+
+.central{
+    text-align: center;
+}
